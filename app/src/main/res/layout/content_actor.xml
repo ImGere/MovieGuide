@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alessandro.serietvguide.activity.ActorActivity"
+    tools:showIn="@layout/app_bar_actor"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/strActorName"
+        android:id="@+id/txtActorName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="255dp"
+        android:id="@+id/actorImage"
+        android:layout_below="@+id/txtActorName"
+        android:padding="0dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/txtActorName"
+        android:layout_toEndOf="@+id/actorImage"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strActorDesc"
+            android:id="@+id/txtActorDesc"/>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:id="@+id/filmography"
+        android:layout_below="@+id/actorImage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

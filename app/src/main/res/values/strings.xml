@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Movie Guide</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="strTitolo">Serie\'s Title</string>
+    <string name="strTitleMovie">Movie title</string>
+    <string name="strTitoloEp">Episode Title</string>
+    <string name="strPlot">PLOT</string>
+    <string name="strMoviePlot">PLOT</string>
+    <string name="strContDesc">Poster</string>
+    <string name="strBtnInd">&lt;&lt;</string>
+    <string name="strBtnAv">>></string>
+    <string name="strYear">Year</string>
+    <string name="strRuntime">Runtime</string>
+    <string name="strRate">Rate</string>
+    <string name="action_change_theme">Change theme</string>
+    <string name="action_imdb">View on IMDb</string>
+    <string name="title_activity_search">Search a serie</string>
+    <string name="hintTitleMovie">Enter the title of the movie</string>
+    <string name="hintTitleSerie">Enter the title of the serie</string>
+    <string name="strSrcButton">Search</string>
+    <string name="title_activity_movie">Movie</string>
+    <string name="title_activity_search_movie">Search a movie</string>
+    <string name="strVersion">Versione </string>
+    <string name="strActorName">Actor Name</string>
+    <string name="actor_not_found">Actor not found</string>
+    <string name="serie_not_found">Serie not found</string>
+    <string name="movie_not_found">Movie not found</string>
+    <string name="error">Error</string>
+
+    <!-- DIALOG -->
+    <string name="strError">Missing data</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_actor">Actor</string>
+    <string name="strActorDesc">Actor Desc</string>
+    <string name="title_activity_search_actor">Search an actor</string>
+    <string name="hntActorSearch">Enter the name of the actor</string>
+    <string name="btnSearchActor">Search</string>
+    <string name="strFilmYear">YYYY</string>
+    <string name="strFilmTitle">Title</string>
+    <string name="title_activity_serie">Serie TV</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="strSerieTitle">Serie Title</string>
+    <string name="seriePlot">Plot</string>
+    <string name="serieSeasonListNumber">Season 1</string>
+    <string name="serieYear">Year</string>
+    <string name="serieRuntime">Runtime</string>
+    <string name="serieRate">Rate</string>
+    <string name="title_activity_episode_viewer">Episode Viewer</string>
+    <string name="episodeTitle">Title</string>
+    <string name="episodePlot">Plot</string>
+    <string name="srcActor">Search an actor</string>
+    <string name="srcMovie">Search a movie</string>
+    <string name="srcSerie">Search a serie</string>
+
+</resources>
