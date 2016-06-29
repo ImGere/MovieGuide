@@ -172,6 +172,7 @@ public class MovieActivity extends AppCompatActivity implements NavigationView.O
 	}
 
 	public void setOldFilm(){
+		this.film = Global.gFilm;
 		txtTitle.setText(Global.gFilm.getTitle());
 		plot.setText(Global.gFilm.getPlot());
 		year.setText("Year: " + Global.gFilm.getYear());

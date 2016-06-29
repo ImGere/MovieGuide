@@ -83,26 +83,6 @@ public class Film {
 			mov.runtime     = jsonObject.getString("runtime");
 			mov.year        = jsonObject.getString("year");
 			mov.rate        = jsonObject.getString("rating");
-			/*if(!mov.img.equals("")) {
-				try {
-					URL uri = new URL(mov.img);
-					urlConnection = (HttpURLConnection) uri.openConnection();
-					InputStream inputStream = urlConnection.getInputStream();
-					if (inputStream != null) {
-						mov.poster = BitmapFactory.decodeStream(inputStream);
-					} else {
-						mov.poster = BitmapFactory.decodeResource(Global.context.getResources(), R.mipmap.ic_photo);
-					}
-
-				} catch (MalformedURLException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-
-			}else{
-				mov.poster = BitmapFactory.decodeResource(Global.context.getResources(), R.mipmap.ic_photo);
-			}*/
 		}catch(JSONException ex){
 			ex.printStackTrace();
 			return null;

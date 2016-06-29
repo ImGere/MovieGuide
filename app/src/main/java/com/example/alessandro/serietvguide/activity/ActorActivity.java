@@ -160,7 +160,7 @@ public class ActorActivity extends AppCompatActivity implements NavigationView.O
 	public void setOldActor(){
 		actName.setText(Global.gActor.getName());
 		actDesc.setText(Global.gActor.getBio());
-
+		this.actor = Global.gActor;
 		// Addatto la filmography nella listView
 		filmAdapter = new FilmAdapter(this, Global.gFilmography);
 		filmographyList.setAdapter(filmAdapter);

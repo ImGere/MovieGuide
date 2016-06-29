@@ -172,7 +172,7 @@ public class SerieActivity extends AppCompatActivity implements NavigationView.O
 		serieYear.setText("Year: " + Global.gSerie.getYear());
 		serieRuntime.setText(" |  Runtime: " + Global.gSerie.getRuntime());
 		serieRate.setText(" | Rate: " + Global.gSerie.getRating());
-
+		this.serie = Global.gSerie;
 		seasonAdapter = new SeasonAdapter(this, Global.gSerie.getSeason());
 		serieSeasonsList.setAdapter(seasonAdapter);
 		serieSeasonsList.setOnItemClickListener(this);

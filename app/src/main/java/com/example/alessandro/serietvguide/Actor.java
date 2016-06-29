@@ -35,15 +35,29 @@ public class Actor {
 		Actor act = new Actor("","","","","", null);
 		try{
 			act.dateOfBirth     = jsonObject.getString("dateOfBirth");
-			act.bio             = jsonObject.getString("bio");
-			act.urlPhoto        = jsonObject.getString("urlPhoto");
-			act.urlIMDB         = jsonObject.getString("urlIMDB");
-			act.name            = jsonObject.getString("name");
-
 		} catch(JSONException ex){
-			ex.printStackTrace();
-			return null;
+			act.dateOfBirth     = "N/A";
 		}
+		try{
+			act.bio             = jsonObject.getString("bio");
+		} catch(JSONException ex){
+			act.bio             = "N/A";
+		}
+		try{
+			act.urlPhoto        = jsonObject.getString("urlPhoto");
+		} catch(JSONException ex){
+			act.urlPhoto        = "N/A";
+		}
+		try{
+			act.urlIMDB         = jsonObject.getString("urlIMDB");
+		} catch(JSONException ex){
+			act.urlIMDB         = "N/A";
+		}try{
+			act.name            = jsonObject.getString("name");
+		} catch(JSONException ex){
+			act.name            = "N/A";
+		}
+
 		return act;
 	}
 
